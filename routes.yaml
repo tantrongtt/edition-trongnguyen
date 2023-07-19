@@ -1,6 +1,6 @@
 routes:
   /notes/:
-    template: notes
+    template: post-extended
     controller: channel
     filter: 'tag:notes'
     data: tag.notes
