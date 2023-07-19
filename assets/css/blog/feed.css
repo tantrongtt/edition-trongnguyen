@@ -70,7 +70,7 @@
     align-items: flex-start;
     overflow: hidden;
     padding: 2rem 0;
-    line-height: 1;
+    /* line-height: 1; */
 }
 
 .feed:hover .feed-title {
@@ -92,6 +92,15 @@
 
 .feed + .feed {
     border-top: 1px solid var(--divider-color);
+}
+
+.posts-expanded .feed + .feed {
+    border-top: none;
+}
+
+.card-broweye {
+    margin-bottom: -3rem;
+    margin-top: 14px;
 }
 
 .post-feed > .feed + .feed.feed-paged,

@@ -22,8 +22,8 @@
 
         <div class="posts-expanded post-feed">
             {{#foreach posts}}
-                <article class="single {{post_class}} kg-canvas">
-                    <hr class="home-post gh-content-line kg-width-wide">  
+                <article class="single {{post_class}} kg-canvas feed">
+                    <hr class="home-post gh-content-line kg-width-content">  
                     <header class="single-header kg-width-left-sidebar">
                         <div class="kg-width-content sticky-top">
                             <div class="single-meta">
@@ -39,11 +39,15 @@
                     </header>
 
                     <div class="single-content gh-content">
+                        {{#primary_tag}}
+                            <h5 class="card-broweye">#{{name}}</h5>
+                        {{/primary_tag}}
                         <h2 class="single-title">{{title}}</h2>
                         {{content}}
                     </div>
                 </article>
             {{/foreach}}
+                {{pagination}}
         </div>
 
     </main>

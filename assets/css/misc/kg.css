@@ -40,6 +40,10 @@ blockquote.kg-blockquote-alt {
     text-align: left;
 }
 
+.posts-expanded blockquote.kg-blockquote-alt {
+    padding: 0;
+}
+
 blockquote.kg-blockquote-alt::after {
     content: "";
 	position: absolute;
